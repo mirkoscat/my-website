@@ -1,26 +1,17 @@
 body{font-family: "Ubuntu", sans-serif;
-font-size: 16px;}
+background-image: linear-gradient(180deg, #A33B07,#D4370B);}
 a{text-decoration: none;}
 h1,h2,h3,h4,h5,p{color: #000;padding-bottom: 30px;}
 
-.big-text{font-size: 70px; font-weight: 900;}
-.med-text{font-size: 40px;}
-.normal-text{font-size: 20px;}
-.small-text{font-size: 14px;}
+.big-text{font-size: 3rem; font-weight: 900;}
+.med-text{font-size: 2rem;font-weight:700;}
+.normal-text{font-size: 1.5rem;font-weight:700;}
+.small-text{font-size: 0.8rem;}
 
 .intro-text{text-transform: uppercase;
 font-size: 20px;
 font-weight: bold;}
 
-.button{padding:18px 28px;background: #316bff;color:white;
-display:inline-block;
-border-radius: 4px;}
-
-.bd-example{
-  border: 1px solid black;
-}
-.logo{width:30px;
-height:30px;}
 
 .press-logo{width:100px;
 height:100px;}
@@ -35,56 +26,23 @@ height:100px;}
   max-width:1350px;
 
 }
-.navbar{width:100%;}
 
-.navbar li{display: inline-block;}
-.navbar li a{color: #fff;
-  padding:15px;
-  display: block;
-}
+.card-img-top{width:400px;
+height:400px;}
+.press-logo{width:100px;
+height:100px;}
 
-.hero{
-  height:600px;
-  display: flex;
-  width:100%;
-  align-items: center;
-  background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,.9)),
-  url("images/bg-video.png") no-repeat center center;
-  background-size: cover;
 
-}
-  .hero__content{
-
-    width:100%;
-    max-width: 1350px;
-    margin: 0 20%; //doveva essere 0 auto
-  }
-  .hero__content h1,
-  .hero__content p{color:white;}
 
   header {
   position: relative;
-  background-color: black;
+  background-image: url("images/piramide.jpg");
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
 
 header .container {
   position: relative;
@@ -101,17 +59,60 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+footer {font-size: 2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 
-/* Media Query for devices withi coarse pointers and no hover functionality */
 
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+}
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
+footer > p {
+  margin: 2rem;
+}
 
-  header video {
-    display: none;
-  }
+footer i {
+  vertical-align: middle;
+}
+.fa {
+  padding: 15px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #fb3958;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
 }
